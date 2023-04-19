@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <script type="module" src="/src/my-panel-jffp.ts"></script>
+    
+    <style>
+      my-panel-jffp {
+        --my-panel-jffp-primary-bg: lightgreen;
+        --my-panel-jffp-primary-color: #222;
+      }
+    </style>
+
+  </head>
+  <body>
+    <my-panel-jffp title="My Profile" icon="12" opened >
+      another content
+    </my-panel-jffp>
+    <my-panel-jffp title="My Profile">
+      another content
+    </my-panel-jffp>
+
+    <script>
+      const el = document.querySelector('my-panel-jffp');
+      el.addEventListener('icon-click', () => {
+        console.log('do something !!');
+      })
+    </script>
+  </body>
+</html>

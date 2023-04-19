@@ -1,0 +1,26 @@
+{
+  "name": "my-panel-jffp",
+  "private": false,
+  "version": "0.1.4",
+  "type": "module",
+  "main": "dist/my-panel-jffp.es.js",
+  "exports": {
+    ".": "./dist/my-panel-jffp.es.js"
+  },
+  "types": "types/my-panel-jffp.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "lit": "^2.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
